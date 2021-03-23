@@ -10,7 +10,7 @@ section {
 h2 {
   background-color: yellow;
   border: solid black 2px;
-  height: 300px;
+  font-size: 50px;
 }
 
 section:first-of-type>h2:first-of-type {
@@ -39,7 +39,7 @@ section:nth-of-type(2)>h2:nth-of-type(2) {
 section:nth-of-type(3)>h2:first-of-type {
   margin: 30px;
   padding: 50px;
-  display: inline-block;
+  display: inline;
 }
 
 section:nth-of-type(3)>h2:nth-of-type(2) {
@@ -49,11 +49,11 @@ section:nth-of-type(3)>h2:nth-of-type(2) {
 
 /* exo float */
 section:nth-of-type(4) {
-  overflow: auto;
+  overflow: scroll;
 }
 section:nth-of-type(4)>h2:first-of-type {
   width: auto;
-  float: right;
+  float: left;
 }
 
 section:nth-of-type(4)>h2:nth-of-type(2) {
@@ -80,13 +80,13 @@ section:nth-of-type(5)>h2:first-of-type {
 /* exo position (priorité) */
 section:nth-of-type(6)>h2:first-of-type {
   position: absolute;
-  left: 100px;
+  z-index: -1;
 }
 
 section:nth-of-type(6)>h2:nth-of-type(2) {
   background-color: blue;
   margin-left: 100px;
   position: absolute;
-  left: -100px;
+  z-index: 1;
 }
 /* fin exo position (priorité) */
