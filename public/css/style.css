@@ -26,6 +26,13 @@ section:first-of-type>h2:nth-of-type(3) {
 /* fin exo margin */
 
 /* exo padding */
+section:nth-of-type(2)>h2:first-of-type {
+  padding: 50px;
+}
+
+section:nth-of-type(2)>h2:nth-of-type(2) {
+  padding-left: 20%;
+}
 /* fin exo padding */
 
 /* exo display */
